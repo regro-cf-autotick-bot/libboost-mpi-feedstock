@@ -1,5 +1,5 @@
-{% set version = "1.91.0" %}
-{% set build = 3 %}
+{% set version = "1.92.0" %}
+{% set build = 0 %}
 {% set mpi_label = mpi|replace("-devel", "") %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://archives.boost.io/release/{{ version }}/source/boost_{{ version|replace(".", "_") }}.tar.gz
-  sha256: 5734305f40a76c30f951c9abd409a45a2a19fb546efe4162119250bbe4d3a463
+  sha256: c4a3b310ddd2472416e091067166b0713be97c63f38c212c484ada022fd296ce
   patches:
     - 5eff1ecc8413b0dc93a1ab047d7fed751e6cb40e.patch  # [not win]
 
